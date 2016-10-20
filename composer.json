@@ -1,5 +1,5 @@
 {
-    "name": "dacast_sdk_php",
+    "name": "dacast/dacast_sdk_php",
     "description" : "Dacast PHP SDK",
     "authors": [
         {
