@@ -1,0 +1,21 @@
+{
+    "name": "dacast_sdk_php",
+    "description" : "Dacast PHP SDK",
+    "authors": [
+        {
+            "name": "Aldric Feuillebois",
+            "email": "aldric.feuillebois@dacast.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.2",
+        "guzzlehttp/psr7": "^1.3"
+    },
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.6",
+        "phpunit/phpunit-mock-objects": "^3.4"
+    }
+}
