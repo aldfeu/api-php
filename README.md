@@ -42,6 +42,7 @@ Your API key can be found in the **settings of your Dacast user account**.
     * [Modify](examples/vod/modify.php)
     * [Delete](examples/vod/delete.php)
     * [Transcoding](examples/vod/transcodingVod.php)
+    * [Upload](examples/vod/upload.php)
     * [Upload a thumbnail](examples/vod/uploadThumbnail.php)
     * [Upload a splashscreen](examples/vod/uploadSplashscreen.php)
 * [**Playlist**](examples/playlist)
