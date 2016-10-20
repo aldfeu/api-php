@@ -7,6 +7,7 @@
             "email": "aldric.feuillebois@dacast.com"
         }
     ],
+    "license" : "MIT",
     "require": {
         "guzzlehttp/guzzle": "^6.2",
         "guzzlehttp/psr7": "^1.3"
