@@ -27,9 +27,7 @@ composer install
 
 Before you can start using the api you need to **set your API key.**
 
-Your API key can be found in the **settings of your Dacast user account**, as shown in the figure below.
-
-[image is coming soon]
+Your API key can be found in the **settings of your Dacast user account**.
 
 ## Demos
 * [**Live**](examples/channel)
