@@ -1,6 +1,7 @@
 <?php
 namespace Dacast;
 
+use Dacast\Elements\Account;
 use Dacast\Elements\Live;
 use Dacast\Elements\Package;
 use Dacast\Elements\Playlist;
