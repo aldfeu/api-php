@@ -23,6 +23,7 @@ class Api
     public function __construct($apiKey)
     {
         $rest = new Rest($apiKey);
+        $this->account = new Account($rest);
         $this->live = new Live($rest);
         $this->package = new Package($rest);
         $this->playlist = new Playlist($rest);

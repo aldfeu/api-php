@@ -5,6 +5,10 @@
         {
             "name": "Aldric Feuillebois",
             "email": "aldric.feuillebois@dacast.com"
+        },
+        {
+            "name": "Stephan Aleman",
+            "email": "stephan.aleman@gmail.com"
         }
     ],
     "license" : "MIT",

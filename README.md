@@ -58,3 +58,5 @@ Your API key can be found in the **settings of your Dacast user account**.
     * [Delete](examples/package/delete.php)
     * [Upload a thumbnail](examples/package/uploadThumbnail.php)
     * [Upload a splashscreen](examples/package/uploadSplashscreen.php)
+* [**Account**](examples/account)
+    * [Retrieve Sells](examples/account/sells.php)
