@@ -231,7 +231,7 @@ class Rest
                 }
                 return $response;
             }
-        }else {
+        } else {
             if($callbackSuccess) return $callbackSuccess($response);
             var_dump('la response');
             var_dump($response);

@@ -67,6 +67,50 @@ class TestVod extends \PHPUnit_Framework_TestCase
     }
 
     /**
+     * @depends testUploadVod
+     */
+    public function testTranscodingList() {
+        $this->rest->expects($this->once())->method('get')->will($this->returnValue([
+            'totalCount' => 4
+        ]));
+
+        $vod = new \Dacast\Elements\Vod($this->rest);
+
+        $lists = $vod->transcodingList([
+            "vod_id" => 433372
+        ]);
+
+        $this->assertEquals(4, $lists['totalCount']);
+    }
+
+    /**
+     * @depends testTranscodingList
+     */
+    public function testTranscoding() {
+        $this->rest->expects($this->once())->method('post')->will($this->returnValue([
+            'format'        => 'MP4 Video H.264/AAC',
+            'id'            => 7,
+            'is_encoded'    => true
+        ]));
+
+        $vod = new \Dacast\Elements\Vod($this->rest);
+
+        $result = $vod->encodeVod([
+            'vod_id'        => 433372,
+            'template_id'    => 7
+        ]);
+
+        $expected = [
+            'format'        => 'MP4 Video H.264/AAC',
+            'id'            => 7,
+            'is_encoded'    => true
+        ];
+
+        $this->assertArraySubset($expected, $result);
+    }
+
+
+    /**
      * @depends testGetVod
      */
     public function testModifyChannel($file)

@@ -56,7 +56,6 @@ class TestChannel extends \PHPUnit_Framework_TestCase
             'description' => 'new channel description'
         ]);
 
-
         $this->assertEquals(423025, $channel['id']);
 
         return $channel;

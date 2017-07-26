@@ -52,12 +52,12 @@ class Vod
 
     public function transcodingList($data)
     {
-        $vod = $this->rest->get('vod/'.$data['id'].'/transcoding');
+        $vod = $this->rest->get('vod/'.$data['vod_id'].'/transcoding');
         return $vod;
     }
     public function encodeVod($data)
     {
-        $vod = $this->rest->post('vod/'.$data['id'].'/transcoding', $data);
+        $vod = $this->rest->post('vod/'.$data['vod_id'].'/transcoding', $data);
         return $vod;
     }
 
