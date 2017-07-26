@@ -1,5 +1,5 @@
 <?php
-$api = new \Dacast\Api('YOUR_DACAST_API');
+$api = new \Dacast\Api('YOUR_APIKEY');
 
 $channel = $api->live->uploadThumbnail([
     "id" => 'SET_YOUR_OWN_CHANNEL_ID',

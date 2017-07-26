@@ -1,5 +1,5 @@
 <?php
-$api = new \Dacast\Api('YOUR_DACAST_API');
+$api = new \Dacast\Api('YOUR_APIKEY');
 $data = [
     'id' => 'SET_OWN_VOD_ID',
     'title' => 'Vod modified',
