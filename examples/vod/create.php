@@ -1,5 +1,5 @@
 <?php
-$api = new \Dacast\Api('YOUR_DACAST_API');
+$api = new \Dacast\Api('YOUR_APIKEY');
 $vod = $api->vod->uploadVod(
     [
         "originalFilename" => 'NAME OF YOUR FILE',

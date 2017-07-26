@@ -1,5 +1,5 @@
 <?php
-$api = new \Dacast\Api('YOUR_DACAST_API');
+$api = new \Dacast\Api('YOUR_APIKEY');
 
 $vod = $api->live->uploadSplashscreen([
     "id" => 'SET_YOUR_OWN_VOD_ID',
