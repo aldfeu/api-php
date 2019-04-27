@@ -233,8 +233,6 @@ class Rest
             }
         } else {
             if($callbackSuccess) return $callbackSuccess($response);
-            var_dump('la response');
-            var_dump($response);
             return $response; //success
         }
     }
